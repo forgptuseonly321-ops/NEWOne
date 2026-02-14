@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Love ❤️ Happy Valentine's Day</title>
+
+<link rel="stylesheet" href="friend_style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-wrapper">
+  <div class="bg"></div>
+  <div class="aurora"></div>
+  <div class="stars"></div>
+  <div class="floating-hearts"></div>
+</div>
+
+<!-- Music -->
+<audio id="bgMusic" autoplay loop>
+  <source src="song.mp3" type="audio/mp3">
+</audio>
+
+<!-- Music Toggle -->
+<button class="music-toggle" onclick="toggleMusic()">
+  <span id="musicIcon">🎵</span>
+</button>
+
+<!-- Main Container -->
+<div class="container">
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="heart-burst">💝</div>
+  <h1 class="hero-title">
+    <span class="name-1">Asmit</span>
+    <span class="heart-symbol">💕</span>
+    <span class="name-2">Urvashi (Nimmi)</span>
+  </h1>
+  <p class="hero-subtitle"></p>
+  <div class="scroll-hint">
+    <span>Scroll to see our journey</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</section>
+
+<!-- Love Timer -->
+<section class="card love-timer-section">
+  <h2 class="section-title">⏰ Time We've Spent Together</h2>
+  <div class="timer-grid">
+    <div class="timer-box">
+      <span id="days" class="timer-number">0</span>
+      <span class="timer-label">Days</span>
+    </div>
+    <div class="timer-box">
+      <span id="hours" class="timer-number">0</span>
+      <span class="timer-label">Hours</span>
+    </div>
+    <div class="timer-box">
+      <span id="minutes" class="timer-number">0</span>
+      <span class="timer-label">Minutes</span>
+    </div>
+    <div class="timer-box">
+      <span id="seconds" class="timer-number">0</span>
+      <span class="timer-label">Seconds</span>
+    </div>
+  </div>
+</section>
+
+<!-- Why I Love You Cards -->
+<section class="card">
+  <h2 class="section-title">💝 Why You're Special To Me</h2>
+  <div class="flip-cards-grid">
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-emoji">😍</div>
+          <p>Click Me!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Your smile brightens my darkest days</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-emoji">💕</div>
+          <p>Click Me!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>You make my heart skip a beat</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-emoji">🌟</div>
+          <p>Click Me!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>You're the star of my life</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-emoji">✨</div>
+          <p>Click Me!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Every moment with you is magical</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-emoji">🥰</div>
+          <p>Click Me!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>You complete me in every way</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card" onclick="flipCard(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="card-emoji">💖</div>
+          <p>Click Me!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>My love for you grows every day</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="card">
+  <h2 class="section-title">📸 Our Beautiful Moments</h2>
+  <div class="photo-gallery">
+    <div class="photo-item">
+      <img src="images/pic1.jpg" alt="Our Memory">
+      <div class="photo-caption">
+        <p>Forever in my heart 💖</p>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img src="images/pic2.jpg" alt="Our Memory">
+      <div class="photo-caption">
+        <p>Together forever 💕</p>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img src="images/pic3.jpg" alt="Our Memory">
+      <div class="photo-caption">
+        <p>My favorite person 🥰</p>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img src="images/pic4.jpg" alt="Our Memory">
+      <div class="photo-caption">
+        <p>beautiful U</p>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img src="images/pic5.jpg" alt="Our Memory">
+      <div class="photo-caption">
+        <p>Our beautiful journey 🌟</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Journey Timeline -->
+<section class="card">
+  <h2 class="section-title">💫 Our Love Story</h2>
+  <div class="journey-timeline">
+    <div class="journey-step">
+      <div class="journey-icon">💬</div>
+      <div class="journey-content">
+        <h3>First Message</h3>
+        <p>The moment everything started</p>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-icon">📞</div>
+      <div class="journey-content">
+        <h3>First Call</h3>
+        <p>Hearing your voice made me smile</p>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-icon">☕</div>
+      <div class="journey-content">
+        <h3>First Date</h3>
+        <p>The best day of my life</p>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-icon">💋</div>
+      <div class="journey-content">
+        <h3>First Kiss</h3>
+        <p>Time stopped in that moment</p>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-icon">♾️</div>
+      <div class="journey-content">
+        <h3>Forever</h3>
+        <p>Our beautiful future together</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Love Letter -->
+<section class="card love-letter-section">
+  <h2 class="section-title">💌 A Letter For You</h2>
+  <div class="love-letter">
+    <p class="letter-salutation">My Dearest Nimmi,</p>
+    <p>
+      From the moment I met you, my world changed completely.
+      You brought color to my gray days and meaning to my life.
+    </p>
+    <p>
+      Your laugh is my favorite sound, your smile my favorite sight,
+      and your happiness my greatest goal. 
+    </p>
+    <p>
+      I promise to cherish you, support you, and love you
+      with all my heart, today and always.
+    </p>
+    <p class="letter-closing">
+      Forever yours,<br>
+      <span class="letter-signature">Asmit ❤️</span>
+    </p>
+  </div>
+</section>
+
+<!-- Special Question -->
+<section class="card special-section">
+  <h2 class="section-title">🎁 I Have Something To Ask...</h2>
+  <p class="special-hint">Click the button below to see something special 👇</p>
+  
+  <button class="special-btn" onclick="showSpecialMessage()">
+    <span class="btn-text">Open Your Heart</span>
+    <span class="btn-emoji">💖</span>
+  </button>
+
+  <div id="specialMessage" class="hidden">
+    <div class="special-content">
+      <h1 class="special-question">Will You Be My Valentine? 💕</h1>
+      <p class="special-promise">
+        I promise to:<br>
+        Make you smile every single day 😊<br>
+        Be there through thick and thin 🤝<br>
+        Love you unconditionally ❤️<br>
+        Be yours forever and always ♾️
+      </p>
+      <div class="special-buttons">
+        <button class="yes-button" onclick="showYesMessage()">Yes! 💖</button>
+        <button class="no-button" onmouseover="moveNoButton(this)">No</button>
+      </div>
+      <div id="yesMessage" class="hidden yes-celebration">
+        <h2>🎉 You Made Me The Happiest! 🎉</h2>
+        <p>I love you so much! 💕✨</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Made with 💖 for the most special person in the world</p>
+  <p class="footer-date">Valentine's Day 2026</p>
+</footer>
+
+</div>
+
+<script src="friend_script.js"></script>
+</body>
+</html>
